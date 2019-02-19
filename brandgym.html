@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no, viewport-fit=cover">
+        <meta name="format-detection" content="telephone=no">
+        <title>BRANDGYM</title>
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+
+        <style>
+            @font-face {
+                 font-family: pressura;
+                 font-weight: 300;
+                 src: url(fonts/GT-Pressura-Mono-Light.otf);
+            }
+            @font-face {
+                 font-family: pressura;
+                 src: url(fonts/GT-Pressura-Mono-Regular.otf);
+            }
+            @font-face {
+                 font-family: pressura;
+                 font-weight: bold;
+                 src: url(fonts/GT-Pressura-Mono-Bold.otf);
+            }
+
+            body {
+                background: black;
+                color:white;
+                font-family: pressura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                margin: 0;
+            }
+
+            h1, h2{
+                position: relative;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-size: 65px;
+                line-height: 65px;
+                z-index: 10;
+            }
+
+            header{
+                background: #0103A7;
+                padding: 130px 0;
+
+            }
+
+            .logo img{
+                height: auto;
+                width: 250px;
+                
+            }
+            .logo{
+                margin: 0 auto 35px auto;
+                width: 250px;
+            }
+
+            header .contacts {
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+                font-weight: 300;
+                width: 720px;
+                margin: 90px auto 0 auto;
+            }
+
+            header .contacts .email {
+                text-decoration: none;
+                color: white;
+                background: url('img/mail.png') no-repeat top center;
+                background-size: auto 26px;
+                padding-top: 50px;
+            }
+            header .contacts .instagram {
+                text-decoration: none;
+                color: white;
+                background: url('img/instagram.png') no-repeat top center;
+                background-size: auto 26px;
+                padding-top: 50px;
+            }
+            header .contacts .location {
+                background: url('img/pin.png') no-repeat top center;
+                background-size: auto 28px;
+                padding-top: 50px;
+            }
+            header .contacts .location a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .stronger-brands {
+                width: 700px;
+                margin: 100px auto 20px auto;
+            }
+            .stronger-brands div{
+                padding: 120px 27px 40px 50px;
+                margin-left: 265px;
+                margin-top: -150px;
+                border:2px solid #0103A7;
+                font-size: 16px;
+                font-weight: normal;
+                letter-spacing: 2px;
+                line-height: 25px;
+            }
+            .stronger-brands div:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background: black;
+                margin: -98px -75px;
+                width: 50px;
+                height: 87px;
+            }
+            .stronger-brands h1 {
+                color:rgb(250, 120, 88);
+                text-transform: uppercase;
+            } 
+            .stronger-brands_branding {
+                color: #FEE01D;
+                
+            } 
+            .stronger-brands_impact {
+                color:rgb(250, 120, 88);
+            } 
+            
+            .meaning  {
+                width: 700px;
+                margin: auto;
+                margin-top: 130px;
+            }    
+            .meaning h2{
+                color: #92CADF;
+                text-transform: uppercase;
+                text-align: right;
+            }
+            .meaning span{
+                color: #FEE01D;
+            }
+            .meaning div{
+                border:2px solid #0103A7;
+                padding: 80px 40px 40px 40px;
+                margin-right: 267px;
+                margin-top: -96px;
+                font-size: 16px;
+                font-weight: normal;
+                letter-spacing: 2px;
+                line-height: 25px;
+            }
+            .meaning div:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background: black;
+                margin: -98px 175px;
+                width: 230px;
+                height: 60px;
+            }
+
+            .why-brandgym  {
+                width: 700px;
+                margin: auto;
+                margin-top: 130px;
+            } 
+            .why-brandgym h2{
+                color: #FEE01D;
+                text-transform: uppercase;
+                text-align: left;
+            }
+            .why-brandgym span:nth-of-type(1), .why-brandgym span:nth-of-type(4) {
+                color: #92CADF;
+            }
+            .why-brandgym span:nth-of-type(2), .why-brandgym span:nth-of-type(5) {
+                color: rgb(250, 120, 88);
+            }
+            .why-brandgym span:nth-of-type(3){
+                color: #FEE01D;
+            }
+            .why-brandgym div{
+                border:2px solid #0103A7;
+                padding: 70px 15px 35px 25px;
+                margin-left: 91px;
+                margin-top: -95px;
+                font-size: 16px;
+                letter-spacing: 2px;
+                line-height: 25px;
+            }
+            .why-brandgym div:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background: black;
+                margin: -88px -35px;
+                width: 360px;
+                height: 60px;
+            }
+
+            .agile  {
+                width: 700px;
+                margin: auto;
+                margin-top: 210px;
+            }
+            .agile h2{
+                color:rgb(250, 120, 88);
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .agile span{
+                color: #92CADF;
+            }
+            .agile div{
+                border:2px solid #0103A7;
+                padding: 170px 15px 40px 25px;
+                margin-left: 187px;
+                margin-right: 170px;
+                margin-top: -180px;
+                font-size: 16px;
+                letter-spacing: 2px;
+                line-height: 25px;
+            }
+            .agile div:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background: black;
+                margin: -130px 300px;
+                width: 30px;
+                height: 90px;
+            }
+
+            .work-with  {
+                width: 700px;
+                margin: auto;
+                margin-top: 130px;
+            }
+            .work-with h2{
+                color: #92CADF;
+                text-transform: uppercase;
+                text-align: left;
+                margin-left: 270px;
+                margin-bottom: 30px;
+            }
+            .chart{
+                width: 100%;
+                height: 50%;
+                padding-bottom: 70px;
+            }
+                .chart-label-top, .chart-label-bottom {
+                    font-weight: 300;
+                    text-align: center;
+                    margin: 15px 0;
+                }
+                .chart-label-left, .chart-label-right {
+                    font-weight: 300;
+                    width: 100px;
+                }
+                .chart-label-left {
+                    text-align: right;
+                }
+                .chart-center {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .chart-area {
+                    width: 380px;
+                    height: 300px;
+                }
+                .chart-x {
+                    position: absolute;
+                    height: 1px;
+                    background: #FEE01D;
+                    width: 380px;
+                    margin-top: 150px;
+                }
+                .chart-y {
+                    position: absolute;
+                    width: 1px;
+                    background: #FEE01D;
+                    height: 300px;
+                    margin-left: 190px;
+                }
+                .chart-img {
+                    position: absolute;
+                    width: 150px;
+                    height: 50px;
+                    background: url('img/logo.png') no-repeat center;
+                    background-size: 90px;
+                    margin-top: 210px;
+                    margin-left: 215px;
+                }
+
+
+            .clients{
+                background: white;
+                border-top: 10px solid #0103A7  ;
+                padding-bottom: 100px;
+            }
+            .clients-content {
+                color: black;
+                width: 700px;
+                margin: 60px auto 20px auto;
+            }
+            .clients h2{
+                color: #0103A7;
+                text-transform: uppercase;
+                text-align: left;
+                font-weight: bold;
+            }
+            .clients h3{
+                font-weight: 200;
+            }
+            .client-img {
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                width: 144px;
+                height: 85px;
+                color: transparent;
+            }
+                .clients .brands-drawn {
+                    margin-bottom: 130px;
+                }
+                .clients .brands-drawn-list, .clients .attended-brands-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-left: -10px;
+                    margin-right: -10px;
+                }
+
+            footer{
+                background: #0103A7;
+                padding: 1px 0 100px 0;
+            }
+            .footer-content{
+                width: 700px;
+                margin: auto;
+                margin-top: 80px;
+            }
+            .footer-content2{
+                display: flex;
+            }
+            footer .contacts{
+                width: 250px;
+                font-size: 14px;
+                font-weight: 200; 
+            }
+                footer .contacts .email {
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    color: white;
+                    background: url('img/mail.png') no-repeat top center;
+                    background-size: auto 24px;
+                    padding-top: 40px;
+                }
+                footer .contacts .instagram {
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    color: white;
+                    background: url('img/instagram.png') no-repeat top center;
+                    background-size: auto 25px;
+                    padding-top: 40px;
+                    margin-top: 50px;
+                }
+                footer .contacts .linkedin {
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    color: white;
+                    background: url('img/linkedin.png') no-repeat top center;
+                    background-size: auto 24px;
+                    padding-top: 40px;
+                    margin-top: 50px;
+                }
+                footer .contacts .location {
+                    background: url('img/pin.png') no-repeat top center;
+                    background-size: auto 28px;
+                    padding-top: 50px;
+                }
+            footer .addresses{
+                border: 2px solid rgb(250, 120, 88);
+                padding: 180px 15px 40px 65px;
+                margin-top: -210px;
+                margin-left: 40px;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 1px;
+                line-height: 25px;
+                flex-grow: 1;
+            }
+            footer .addresses:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background: #0103A7;
+                margin: -185px -75px;
+                width: 132px;
+                height: 160px;
+            }
+            footer .addresses div{
+                margin-top: 20px;
+                
+            }
+                footer .addresses .location {
+                    background: url('img/pin.png') no-repeat top center;
+                    background-size: auto 28px;
+                    padding-top: 40px;
+                    width: 59px;
+                    font-size: 13px;
+                    margin-bottom: 40px;
+                }
+                footer .addresses .location a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+            @media (max-width: 700px) {
+                body {
+                    overflow-x: hidden;
+                }
+                h1, h2 {
+                    font-size: 30px;
+                    text-align: center;
+                    line-height: 35px;
+                }
+                header {
+                    padding: 20px 0;
+                }
+                header .contacts {
+                    flex-direction: column;
+                    width: 100%;
+                    text-align: center;
+                }
+                header .contacts .email, header .contacts .instagram, header .contacts .location {
+                    margin-top: 20px;
+                    padding-top: 30px;
+                    background-size: auto 20px;
+                }
+                .stronger-brands, .meaning, .why-brandgym, .agile, .work-with {
+                    width: 100%;
+                    margin: 50px 0 0 0;
+                }
+                .stronger-brands div, .meaning div, .why-brandgym div, .agile div {
+                    margin: 0;
+                    border: 0;
+                    padding: 20px;
+                }
+                .stronger-brands div:before, .meaning div:before, .why-brandgym div:before, .agile div:before {
+                    display: none;
+                }
+                .meaning h2, .why-brandgym h2, .agile h2, .work-with h2 {
+                    text-align: center;
+                    margin-left: 0;
+                }
+                .chart {
+                    width: 100%;
+                    font-size: 9px;
+                }
+                    .chart-label-top, .chart-label-bottom {
+                        font-weight: 300;
+                        text-align: center;
+                        margin: 15px 0;
+                    }
+                    .chart-label-left, .chart-label-right {
+                        font-weight: 300;
+                        width: 100px;
+                    }
+                    .chart-label-left {
+                        text-align: right;
+                    }
+                    .chart-center {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                    }
+                    .chart-area {
+                        position: relative;
+                    }
+                    .chart-x {
+                        width: 100%;
+                    }
+                    .chart-y {
+                        margin-left: 50%;
+                    }
+                    .chart-img {
+                        position: absolute;
+                        width: 75px;
+                        height: 25px;
+                        background: url('img/logo.png') no-repeat center;
+                        background-size: 45px;
+                        margin-top: 210px;
+                        margin-left: 60%;
+                    }
+                .clients-content {
+                    width: 100%;
+                    padding: 0 3px;
+                }
+                .clients .brands-drawn-list, .clients .attended-brands-list {
+                    justify-content: center;
+                }
+                .footer-content {
+                    width: 100%;
+                }
+                .footer-content2 {
+                    flex-direction: column;
+                }
+                footer .contacts {
+                    width: auto;
+                    margin: 20px 0;
+                }
+                footer .addresses {
+                    border: 0;
+                    margin: 20px 30px;
+                    border-top: 2px solid rgb(250, 120, 88);
+                    padding: 20px 20px 0;
+                    text-align: center;
+                }
+                footer .location {
+                    margin: 0 auto;
+                }
+                footer .addresses:before {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="logo.gif" alt="Logo Brand Gym">
+            </div>
+            <div class="contacts">
+                <a class="email" href="mailto:contato@brandgym.com.br,guta@brandgym.com.br,vanessa@brandgym.com.br" target="_blank">contato@brandgym.com.br</a>
+                <a class="instagram" href="https://www.instagram.com/brandgymbr/" target="_blank">@brandgym</a>
+                <div class="location">
+                    <a href="https://goo.gl/maps/4Hz4dDSQkqL2" target="_blank">RJ</a> / <a href="https://goo.gl/maps/QCpJw8VfBuD2" target="_blank">SP</a>
+                </div>
+            </div>
+        </header>
+        <div class="stronger-brands">
+            <h1> Construímos<br> Marcas <br>Mais Fortes</h1>
+            <div>
+                <span class="stronger-brands_branding">Branding:</span> um exercício diário para fortalecer negócios por meio da construção de marca.
+                Mais do que consistência visual e ações de marketing, vamos descobrir <span class="stronger-brands_impact"> o impacto que sua
+                    marca tem na vida das pessoas. </span>
+            </div>
+        </div>
+        <div class="meaning">
+            <h2> Qual o Significado<br> da Sua Marca?</h2>
+            <div>
+                Nossa metodologia se adapta a marcas contemporâneas. E nossos processos se adequam <span>ao que
+                você precisa construir.</span> Que tal se construirmos juntos?
+            </div>
+        </div>
+        <div class="why-brandgym">
+            <h2>Por que escolher <br>a Brand Gym? </h2>
+            <div>
+                Ciclos mais curtos, <span> parcerias mais longas. </span> <br>
+                <span>Metodologia ágil</span> com profundidade. <br>
+                Nossos clientes são <span>empreendedores por natureza.</span> <br>
+                <span>Interesses em comum </span>entre o seu negócio e o nosso. <br>
+                Time treinado e de <span>alta performance.</span>
+            </div>
+        </div>
+       <div class="agile">
+            <h2> Ágil e Inteligente</h2> 
+            <div>
+                Trabalhamos lado a lado dos clientes seguindo processos ágeis, otimizando recursos, 
+                maximizando resultados, <span>gerando mais valor para a sua e para a nossa marca.</span>
+            </div>
+       </div>
+       <div class="work-with">
+            <h2> Com Quem Trabalhamos</h2> 
+            <div class="chart">
+                <div class="chart-label-top">Perfil Corporativo</div>
+
+                <div class="chart-center">
+                    <div class="chart-label-left">Agência de Publicidade</div>
+                    <div class="chart-area">
+                        <div class="chart-img"></div>
+                        <div class="chart-x"></div>
+                        <div class="chart-y"></div>
+                    </div>
+                    <div class="chart-label-right">Agência de Branding</div>
+                </div>
+
+                <div class="chart-label-bottom">Perfil Empreendedor</div>
+            </div>
+       </div>
+       <div class="clients">
+           <div class="clients-content">
+               <h2>Nossos<br> Clientes</h2>
+               <div class="brands-drawn">
+                   <h3>Marcas que desenhamos</h3>
+                   <div class="brands-drawn-list">
+                       <div class="client-img" style="background-image:url('img/agrojem.png'); background-size:104px;">agrojem</div>
+                       <div class="client-img" style="background-image:url('img/savanas.png'); background-size:80px;">savanas</div>
+                       <div class="client-img" style="background-image:url('img/tilt.png'); background-size:64px;">tilt</div>
+                       <div class="client-img" style="background-image:url('img/vinland.png'); background-size:108px;">Vinland Capital</div>
+                       <div class="client-img" style="background-image:url('img/chamada_animada.png'); background-size:141px;">chamada animada</div>
+
+                       <div class="client-img" style="background-image:url('img/pigpeg.png'); background-size:85px;">pigpeg</div>
+                       <div class="client-img" style="background-image:url('img/conexao_do_bem.png'); background-size:85px;">conexão do bem5</div>
+                       <div class="client-img" style="background-image:url('img/spot.png'); background-size:78px;">spot metrics</div>
+                       <div class="client-img" style="background-image:url('img/hotel_urbano.png'); background-size:136px;">Hotel urbano - hurb.com</div>
+                       <div class="client-img" style="background-image:url('img/cozy.png'); background-size:82px;">Cozy</div>
+                   </div>
+               </div>
+
+               <div class="attended-brands">
+                   <h3>Marcas que atendemos</h3>
+                   <div class="attended-brands-list">
+                       <div class="client-img" style="background-image:url('img/vigilantes.png'); background-size:109px;">vigilantes do peso</div>
+                       <div class="client-img" style="background-image:url('img/papelcraft.png'); background-size:111px;">Papel Craft</div>
+                       <div class="client-img" style="background-image:url('img/polytech.png'); background-size:96px;">polytech</div>
+                       <div class="client-img" style="background-image:url('img/casaspedro.png'); background-size:76px;">Casas Pedro</div>
+                       <div class="client-img" style="background-image:url('img/benie.png'); background-size:104px;">benie</div>
+
+                       <div class="client-img" style="background-image:url('img/hub.png'); background-size:104px;">Hub</div>
+                       <div class="client-img" style="background-image:url('img/glam_by.png'); background-size:112px;">glam by</div>
+                       <div class="client-img" style="background-image:url('img/casbri.png'); background-size:42px;">casbri</div>
+                       <div class="client-img" style="background-image:url('img/melaine.png'); background-size:98px;">melaine</div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <footer>
+          <div class="footer-content">
+            <h2>Vamos Falar<br> Sobre A <br> Sua Marca?</h2>
+           <div class="footer-content2">
+            <div class="contacts">
+                <a class="email" href="mailto:contato@brandgym.com.br,guta@brandgym.com.br,vanessa@brandgym.com.br" target="_blank">contato@brandgym.com.br</a>
+                <a class="instagram" href="https://www.instagram.com/brandgymbr/" target="_blank">@brandgym</a>
+                <a class="linkedin" href="https://www.linkedin.com/company/brandgymbr/" target="_blank">company/brandgymbr</a>
+           </div>
+           <div class="addresses">
+                <div class="location">
+                    <a href="https://goo.gl/maps/4Hz4dDSQkqL2" target="_blank">RJ</a> / <a href="https://goo.gl/maps/QCpJw8VfBuD2" target="_blank">SP</a>
+                </div>
+                <div>Rua General Polidoro, 10 <br/>Botafogo - Rio de Janeiro</div>
+                <div>Rua Sader Macul, 96 <br/>Itaim Bibi - São Paulo</div>
+            </div>
+            </div>
+            </div>
+       </footer>
+
+    </body>
+</html>
