@@ -55,7 +55,8 @@ img {
 
 .menu img {
 	display: inline-block;	
-	padding: 10px 20px;
+	padding: 11px 20px;
+	width: 90%;
 }
 
 .menu nav {
@@ -72,6 +73,7 @@ img {
 .menu nav li {
 	display: inline-block;
 	text-align: left;
+	margin: -10px;
 }
 
 .menu nav li a {
@@ -89,10 +91,10 @@ img {
 .mobile-btn {
 	display: block;
 	color: white;
-	width: 36px;
-	height: 36px;
+	width: 30px;
+	height: 30px;
 	border-top: 4px solid;
-	margin: 20px 20px 0 0;
+	margin: 15px 20px 0 0;
 	float: right;
 	position: relative;
 	cursor: pointer;
@@ -149,7 +151,7 @@ img {
 
 .menu-nav.mobile-menu li {
 	display: block;
-	padding: 10px 50px;
+	padding: 0px 50px;
 }
 
 .menu-nav.mobile-menu li a {
@@ -162,6 +164,10 @@ img {
 	text-align: right;
 	color: #FFFF1E
 	
+}
+
+.estilo-estados{
+	font-weight: bolder;
 }
 
 /* Main BG */
