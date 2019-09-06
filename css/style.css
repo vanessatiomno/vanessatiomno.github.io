@@ -2,6 +2,7 @@
 
 html{
 	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 
 body {
@@ -43,7 +44,7 @@ img {
 .menu {
 	background: #0103A7; /* azul */
 	position: fixed;
-	border-bottom: 2px solid yellow;
+	/* border-bottom: 2px solid yellow; */
 	width: 100%;
 	top: 0;
 	z-index: 100;
@@ -56,7 +57,7 @@ img {
 .menu img {
 	display: inline-block;	
 	padding: 11px 20px;
-	width: 90%;
+	width: 85%;
 }
 
 .menu nav {
@@ -91,8 +92,8 @@ img {
 .mobile-btn {
 	display: block;
 	color: white;
-	width: 30px;
-	height: 30px;
+	width: 22px;
+	height: 25px;
 	border-top: 4px solid;
 	margin: 15px 20px 0 0;
 	float: right;
@@ -106,7 +107,7 @@ img {
 	content: '';
 	display: block;
 	height: 4px;
-	margin-top: 6px;
+	margin-top: 4px;
 	background: currentColor;
 	position: relative;
 	transition: transform .2s ease;
@@ -179,8 +180,8 @@ img {
 
 .main_bg img {
 	margin: 0 auto;
-	padding: 240px 0;
-	max-width: 300px;
+	padding: 180px 0;
+	max-width: 360px;
 }
 
 /* Introdução */
@@ -195,14 +196,15 @@ img {
 }
 
 .intro_left h2 {
-	margin: 40px 0 40px 0;
+	margin: 40px 0 30px 0;
 	position: relative;
+	font-weight: 1000;
 }
 
 .intro_left p {
 	text-transform: uppercase;
 	color: #0103A7; /* azul */
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 3em;
 	line-height: 1.1em;
 	letter-spacing: .009em;
@@ -212,10 +214,10 @@ img {
 	content: "";
     display: block;
     position: absolute;
-    top: 18px;
-    left: -20px;
-    width: 120px;
-    height: 30px;
+    top: -60px;
+    left: 113px;
+    width: 67vw;
+    height: 75px;
     background: #FFFF1E; /* Amarelo */
     margin: 14px auto 10px auto;
     z-index: -10;
@@ -223,7 +225,9 @@ img {
 
 .intro_right {
 	margin-left: 10px;
+	margin-top: 163px;
 }
+
 
 .intro_right img {
 	max-width: 300px;
@@ -233,7 +237,7 @@ img {
 .intro_right p {
 	font-weight: 600;
 	color: #0103A7; /* azul */
-	line-height: 1.6em;
+	line-height: 1.7em;
 	max-width: 230px;
 	margin-top: 20px;
 }
@@ -361,11 +365,16 @@ img {
 .cases {
 	background: #0103A7; /* azul */
 	padding: 60px 0;
+	margin: auto 0;
 }
 
 .cases img {
 	padding: 10px 50px;
-	max-width: 100%;
+	max-width: 200px;
+	/* border: solid white; */
+	width: 100%;
+	height: auto;
+	object-fit: contain;
 }
 
 /* Depoimentos */
@@ -821,6 +830,15 @@ img {
 
 .intro_left h2 {
 	font-size: 3em;
+}
+
+.intro_left h2::after {
+	width: 52vw;
+	top: -37px;
+	width: 160px;
+	height: 50px;
+	left: 125px;
+
 }
 
 .intro_left p {
