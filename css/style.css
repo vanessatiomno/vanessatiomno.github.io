@@ -501,37 +501,65 @@ img {
 
 /* Quebra menina pulando */
 
-.quebra2 {
-	margin: 60px auto;
-	z-index: -110;
-	background: url("../img/bg_menina.jpg") no-repeat center;
-	background-size: contain; 
-	/* trocar de contain para cover para que o background img tome tudo */
-	max-width: 100%;
-	max-height: 100%;
-	background-color: rgba(0, 1, 171, 1);
+
+
+.quebra2-container>.bolinhas-brancas{
+    background-image: url("../img/BG_Site_Imagem_TexturaBolinhas_Branca.png");
+    background-size: cover;
 }
 
-.quebra2_left p {
-	margin: 240px auto;
-	font-size: 1.05em;
-	text-align: right;
-	letter-spacing: .002em;
+.quebra2-container>*{
+    width: 25%;
+    height: 300px;
+}
+
+.quebra2_img{
+    background-image: url("../img/BG_Site_Imagem_01.jpg");
+    background-size: cover;
+}
+
+.quebra2_img>p{
 	color: #0103A7;
-	max-width: 280px;
+	margin: 21% auto;
+	font-size: 0.8em;
+	text-align: left;
+	text-justify: right;
+	padding-left: 60%;
 	font-weight: 600;
-	padding-left: 80px;
+	max-width: 100%;
+	line-height: 15px;
+	font-weight: normal;
 }
 
-.quebra2_right p {
-	margin: 240px auto;
-	letter-spacing: .002em;
-	font-size: 1.05em;
-	color: #FFF;
-	max-width: 280px;
-	font-weight: 600;
-	padding-right: 80px;
+.quebra2-text{
+	/* display: inline-block; */
+	position: relative;
 }
+
+.quebra2-text>p{
+	font-family: 'Source Code Pro', monospace; ;
+	color: white;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 40px;
+	position: absolute;
+	top: 15%;
+	left: 10%;
+
+}
+
+.quebra2-text>p>.letra-outline{
+	color: white;
+	-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+
+}
+
+
+
 
 /* Footer */
 

@@ -1,4 +1,4 @@
-.box-container{
+.marcas-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -6,6 +6,11 @@
     height: auto;
 }
 
-.lobby-logo{
-    
+.quebra2-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #0103A7;
 }
+
