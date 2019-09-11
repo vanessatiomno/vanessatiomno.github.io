@@ -2,6 +2,15 @@
 <html lang="pt-br">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147177292-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147177292-1');
+</script>
 
 	<meta charset="utf-8">
 	<title>BrandGym</title>
@@ -24,7 +33,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<script type="text/javascript" src="js/libs/modernizr.custom.45655.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body>
@@ -88,7 +97,7 @@
 	</section>
 
 	<section class="cases" id="cases">
-		<div class="container box-container">
+		<div class="container marcas-container">
 			<img class="" src="img/logos_-01.png">
 			<img class="" src="img/logos_-02.png">
 			<img class="" src="img/logos_-03.png">
@@ -172,14 +181,16 @@
 	</section>
 
 	<section class="quebra2">
-		<div class="quebra2_texto container">
-			<div class="quebra2_left grid-8">
-				<p>Branding é para quem é valioso muito antes de ser grande.<p>
+		<div class="quebra2_texto quebra2-container">
+			<div class="bolinhas-brancas">
 			</div>
+			<div class="quebra2_img">
+				<p>Branding é para <br> quem é valioso<br>muito antes de <br>ser grande.<p>
+			</div>
+			<div class="quebra2-text"><p><span class="letra-outline">Não espere <br> ser grande <br></span> para <br> construir <br> valor.</p></div>
+			<div class="quebra2-blue"></div>
 
-			<div class="quebra2_right grid-8">
-				<p>Não espere ser grande para construir valor.<p>
-			</div>
+		
 		</div>
 
 	</section>
@@ -212,6 +223,7 @@
 
 
 	<!-- JavaScript -->
+	
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
@@ -220,7 +232,27 @@
 	<script type="text/javascript" src="js/volta-ao-topo.js"></script>
 	<script type="text/javascript" src="js/oculta-menu-ao-rolar.js"></script>
 	<!-- JavaScript -->
-
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#0103a7",
+		  "text": "#fcfcfc"
+		},
+		"button": {
+		  "background": "#0103a7",
+		  "text": "#ffff1e"
+		}
+	  },
+	  "theme": "classic",
+	  "content": {
+		"message": "Utilizamos cookies para garantir que você tenha uma boa experiência em nosso site. \n\nSe você continuar navegando, assumiremos que isso não é problema para você. :)",
+		"dismiss": "Entendi!",
+		"link": "Saiba mais"
+	  }
+	});
+	</script>
 </body>
 
 </html>
