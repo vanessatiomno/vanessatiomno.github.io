@@ -33,7 +33,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<script type="text/javascript" src="js/libs/modernizr.custom.45655.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body>
@@ -223,6 +223,7 @@
 
 
 	<!-- JavaScript -->
+	
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
@@ -231,7 +232,27 @@
 	<script type="text/javascript" src="js/volta-ao-topo.js"></script>
 	<script type="text/javascript" src="js/oculta-menu-ao-rolar.js"></script>
 	<!-- JavaScript -->
-
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#0103a7",
+		  "text": "#fcfcfc"
+		},
+		"button": {
+		  "background": "#0103a7",
+		  "text": "#ffff1e"
+		}
+	  },
+	  "theme": "classic",
+	  "content": {
+		"message": "Utilizamos cookies para garantir que você tenha uma boa experiência em nosso site. \n\nSe você continuar navegando, assumiremos que isso não é problema para você. :)",
+		"dismiss": "Entendi!",
+		"link": "Saiba mais"
+	  }
+	});
+	</script>
 </body>
 
 </html>
