@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 60%;
+    width: 80%;
     height: auto;
+    margin-left: auto;
+    justify-content: center;
 }
 
 .quebra2-container{
