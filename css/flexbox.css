@@ -16,3 +16,9 @@
     background-color: #0103A7;
 }
 
+.depoimento-pessoal{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
