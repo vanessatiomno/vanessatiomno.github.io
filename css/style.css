@@ -691,7 +691,7 @@ img {
 
 /* Tablets */
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 980px) {
 
 .intro_left {
 	padding-left: 50px;
