@@ -92,7 +92,7 @@ img {
 }
 
 .grid p{
-    max-width: 90%;
+    max-width: 250px;
 }
 
 .subtitle h2::after{
