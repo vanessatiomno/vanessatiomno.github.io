@@ -13,6 +13,17 @@ p {
 	font-size: 14px;
 	line-height: 20px;
 }
+
+.hidden{
+    display: none;
+}
+
+#solucao-read-more,
+#contexto-read-more{
+    cursor: pointer;
+    color: grey;
+}
+
 li{
     line-height: 20px;
     font-size: 14px;
@@ -78,6 +89,7 @@ img {
     position: absolute;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    text-transform: uppercase;
 }
 
 /* explicação do case */
@@ -98,6 +110,7 @@ img {
 .trabalho .subtitle{
     margin-left: auto;
     display: block;
+    
 }
 .trabalho .subtitle h2{
     margin-left: auto;
@@ -108,22 +121,25 @@ img {
     display: inline-block;
 }
 .grid ul{
-    padding-left: 10%;
+    padding-left: 73%;
     width: 100%;
 }
 
 .grid .subtitle{
-    width: 100%;
+    width: 70%;
 }
 
 .grid .solucao .subtitle, .grid .solucao .content {
-    display: flex;            /* new */
-    align-items: center;      /* new */
-    justify-content: center;  /* new */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid p{
-    max-width: 90%;
+    max-width: 70%;
 }
 
 .subtitle h2::after{
@@ -139,13 +155,14 @@ img {
 .subtitle h2{
     font-size: 20px;
     padding-bottom: 10px;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 /* prints do case */
 
 .prints{
     margin-top: 25px;
+    margin-bottom: 25px;
     /* object-fit: contain; */
     /* display: flex; */
     align-items: center;
@@ -177,9 +194,6 @@ img {
 }
 
 
-/* tablets */
-
-
 /* phones */
 @media only screen and (max-width: 940px){
 
@@ -203,6 +217,14 @@ img {
         padding-left: 12vw;
     }
 
+    .grid .solucao .subtitle, 
+    .grid .solucao .content,
+    .grid .trabalho .subtitle{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
     .grid{
         display: inline-block;
         margin: 10px;
@@ -211,15 +233,17 @@ img {
 
     .grid .subtitle, .grid .content{
         display: block !important;
+        max-width: 100% !important;
     }
 
     .grid .trabalho{
         padding-left: 0;
+        display: block;
     }
 
 
     .grid p{
-        max-width: 90%;
+        max-width: 100% !important;
         margin-bottom: 10px;
         font-size: 15px;
         line-height: 1.5em;

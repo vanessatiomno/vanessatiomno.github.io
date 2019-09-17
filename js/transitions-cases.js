@@ -4,7 +4,6 @@ function scrollAppear(){
 
     imgs.forEach(function(img){
         if(img.getBoundingClientRect().top < screenHeight / 1.25){
-            console.log(img);
             img.classList.add("appear");
         }
     });
@@ -18,5 +17,4 @@ window.addEventListener('scroll', scrollAppear);
 document.addEventListener('DOMContentLoaded', function(){
     var img1 = document.querySelector(".img-1");
     img1.classList.add('appear');
-    console.log(img1);
 });
