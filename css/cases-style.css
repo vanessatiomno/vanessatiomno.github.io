@@ -121,7 +121,7 @@ img {
     display: inline-block;
 }
 .grid ul{
-    padding-left: 73%;
+    /* padding-left: 73%; */
     width: 100%;
 }
 
@@ -156,6 +156,10 @@ img {
     font-size: 20px;
     padding-bottom: 10px;
     text-transform: uppercase;
+}
+
+.trabalho .content{
+    margin-left: 35%;
 }
 
 /* prints do case */
@@ -247,6 +251,9 @@ img {
         margin-bottom: 10px;
         font-size: 15px;
         line-height: 1.5em;
+    }
+    .trabalho .content{
+        margin-left: 0;
     }
 
     .trabalho .subtitle h2{
