@@ -77,10 +77,10 @@ img {
 .grid{
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 3fr 4fr 3fr ;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     margin-top: 40px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .grid div, .grid p, .grid ul{
@@ -89,6 +89,14 @@ img {
     /* max-width: 30%; */
     /* margin-top: 40px; */
     /* margin-left: 10px; */
+}
+.grid .solucao .subtitle, .grid .solucao .content {
+    display: flex;            /* new */
+    align-items: center;      /* new */
+    justify-content: center;  /* new */
+}
+.grid .trabalho{
+    padding-left: 27px;
 }
 
 .grid p{
@@ -148,31 +156,9 @@ img {
 
 /* tablets */
 
-@media only screen and (min-width: 730px) and (max-width: 980px) {
 
-    img{
-        max-width: 100%;
-    }
-    .container{
-        max-width: 100%;
-        /* padding: 0 10px; */
-    }
-    .nosso-trabalho{
-        margin: 0 auto; 
-        padding: 0 10px;
-    }
-
-    .grid{
-        margin-left: 10px;
-    }
-
-    .subtitle h2::after{
-        /* content: ""; */
-        width: 190px;
-    }
-}
 /* phones */
-@media only screen and (max-width: 730px){
+@media only screen and (max-width: 940px){
 
     .container{
         max-width: 100%;
@@ -200,10 +186,19 @@ img {
         max-width: 100%;
     }
 
+    .grid .subtitle, .grid .content{
+        display: block !important;
+    }
+
+    .grid .trabalho{
+        padding-left: 0;
+    }
+
     .grid p{
-        max-width: 95%;
+        max-width: 90%;
         margin-bottom: 10px;
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.5em;
     }
 
     .grid ul{
@@ -220,7 +215,8 @@ img {
 
     .subtitle h2::after{
         /* content: ""; */
-        max-width: 100%;
+        width: 93%;
+        position: absolute;
     }
     .grid div{
         max-width: 100%;
