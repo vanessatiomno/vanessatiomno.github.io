@@ -11,7 +11,11 @@ body {
 p {
 	font-family: 'Source Code Pro', monospace;
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 20px;
+}
+li{
+    line-height: 20px;
+    font-size: 14px;
 }
 
 h1, h2, h3, h4 {
@@ -25,7 +29,16 @@ h2 {
 	color: #0103A7; /* azul */
 	text-transform: uppercase;
 	font-weight: bold;
-	line-height: 1.6em;
+    line-height: 1.6em;
+    width: 95%;
+}
+
+.solucao .subtitle h2::after{
+    width: 100%;
+}
+
+.solucao p{
+    max-width: 95% !important   ;
 }
 
 img {
@@ -38,7 +51,7 @@ img {
 }
 
 .container{
-    width: 924px;
+    width: 80%;
     margin: 0 auto;
     position: relative;
 }
@@ -77,35 +90,45 @@ img {
 .grid{
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 4fr 3fr ;
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: 3fr 3fr 3fr ;
     margin-top: 40px;
-    /* justify-content: center; */
+    position: relative;
+}
+
+.trabalho .subtitle{
+    margin-left: auto;
+    display: block;
+}
+.trabalho .subtitle h2{
+    margin-left: auto;
+    display: block;
 }
 
 .grid div, .grid p, .grid ul{
-    /* background-color: pink; */
     display: inline-block;
-    /* max-width: 30%; */
-    /* margin-top: 40px; */
-    /* margin-left: 10px; */
 }
+.grid ul{
+    padding-left: 10%;
+    width: 100%;
+}
+
+.grid .subtitle{
+    width: 100%;
+}
+
 .grid .solucao .subtitle, .grid .solucao .content {
     display: flex;            /* new */
     align-items: center;      /* new */
     justify-content: center;  /* new */
 }
-.grid .trabalho{
-    padding-left: 27px;
-}
 
 .grid p{
-    max-width: 250px;
+    max-width: 90%;
 }
 
 .subtitle h2::after{
     content: "";
-    width: 250px;
+    width: 100%;
     height: 2px;
     background-color: currentColor;
     display: block;
@@ -177,7 +200,7 @@ img {
         margin-top: auto;
         margin-bottom: auto;
         padding-top: 17.5px;
-        padding-left: 20px;
+        padding-left: 12vw;
     }
 
     .grid{
@@ -194,6 +217,7 @@ img {
         padding-left: 0;
     }
 
+
     .grid p{
         max-width: 90%;
         margin-bottom: 10px;
@@ -201,8 +225,13 @@ img {
         line-height: 1.5em;
     }
 
+    .trabalho .subtitle h2{
+        margin-left: 0;
+    }
+
     .grid ul{
-        display: block;
+        padding-left: 0;
+        width: 100%;
     }
 
     .subtitle h2{
@@ -215,11 +244,12 @@ img {
 
     .subtitle h2::after{
         /* content: ""; */
-        width: 93%;
+        width: 100%;
         position: absolute;
     }
     .grid div{
         max-width: 100%;
     }
+
 
 }
