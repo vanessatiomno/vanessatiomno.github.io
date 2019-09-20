@@ -251,6 +251,13 @@ img {
 	height: 100px;
 }
 
+.footer-img{
+	display: block;
+	max-width: 200px;
+	height: auto;
+	padding-top: 25px;
+	margin-left: -17px;
+}
 /* Marcas Fortes */
 
 .marcas {
