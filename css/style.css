@@ -255,8 +255,8 @@ img {
 	display: block;
 	max-width: 200px;
 	height: auto;
-	padding-top: 25px;
-	margin-left: -17px;
+	/* padding-top: 25px; */
+	margin-left: 159%;
 }
 /* Marcas Fortes */
 
@@ -846,154 +846,159 @@ img {
 
 @media only screen and (max-width: 767px) {
 
-.menu nav li a {
-	padding: 20px 0px;
-}
+	.menu nav li a {
+		padding: 20px 0px;
+	}
 
-.menu nav li a::after {
-	display: none;
-}
+	.menu nav li a::after {
+		display: none;
+	}
 
-.main_bg img {
-	padding: 220px 0;
-	max-width: 200px;
-}
+	.main_bg img {
+		padding: 220px 0;
+		max-width: 200px;
+	}
 
-.intro_left {
-	padding-left: 0px;
-}
+	.intro_left {
+		padding-left: 0px;
+	}
 
-.intro_left h2 {
-	font-size: 3em;
-}
+	.intro_left h2 {
+		font-size: 3em;
+	}
 
-.intro_left h2::after {
-	width: 52vw;
-	top: -37px;
-	height: 50px;
-	left: 125px;
+	.intro_left h2::after {
+		width: 52vw;
+		top: -37px;
+		height: 50px;
+		left: 125px;
 
-}
+	}
 
-.intro_left p {
-	font-size: 2em;
-}
+	.intro_left p {
+		font-size: 2em;
+	}
 
-.intro_right {
-	padding-left: 0px;
-	margin: 0 auto;
-}
+	.intro_right {
+		padding-left: 0px;
+		margin: 0 auto;
+	}
 
-/* Background bolinhas */
+	/* Background bolinhas */
 
-.bolinhas {
-	display: none;
-}
+	.bolinhas {
+		display: none;
+	}
 
-.bolinhas::before {
-	content: "";
-	transform: rotate(-135deg);
-  	-webkit-transform: rotate(-135deg);
-    top: 80px;
-    width: 300px;
-}
+	.bolinhas::before {
+		content: "";
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+		top: 80px;
+		width: 300px;
+	}
 
-/* Marcas Fortes */
+	/* Marcas Fortes */
 
-.intro_marcas {
-	margin: 40px 0;
-	padding-left: 0px;
-}
+	.intro_marcas {
+		margin: 40px 0;
+		padding-left: 0px;
+	}
 
-.intro_marcas::before {
-	transform: rotate(-170deg);
-  	-webkit-transform: rotate(-170deg);
-  	top: -50px;
-    width: 250px;
-    height: 40px;
-}
+	.intro_marcas::before {
+		transform: rotate(-170deg);
+		-webkit-transform: rotate(-170deg);
+		top: -50px;
+		width: 250px;
+		height: 40px;
+	}
 
-.intro_marcas p {
-	max-width: 200px;
-}
+	.intro_marcas p {
+		max-width: 200px;
+	}
 
-.intro_marcas::after {
-    top: 120px;
-    left: 180px;
-    transform: rotate(-270deg);
-  	-webkit-transform: rotate(-270deg);
-}
+	.intro_marcas::after {
+		top: 120px;
+		left: 180px;
+		transform: rotate(-270deg);
+		-webkit-transform: rotate(-270deg);
+	}
 
-.intro_marcas_subtitulo {
-	padding-left: 0px;
-}
+	.intro_marcas_subtitulo {
+		padding-left: 0px;
+	}
 
-.intro_marcas_subtitulo h2{
-	font-size: 3em;
-	margin: 0 auto;
-}
+	.intro_marcas_subtitulo h2{
+		font-size: 3em;
+		margin: 0 auto;
+	}
 
-.trabalhos h2 {
-	font-size: 100px;
-	padding: 120px 0;
-	width: 300px;
-	margin: 0 auto;
-}
+	.trabalhos h2 {
+		font-size: 100px;
+		padding: 120px 0;
+		width: 300px;
+		margin: 0 auto;
+	}
 
-.trabalhos h2::before {
-	font-size: 300px;
-	font-weight: 500;
-	top: 205px;
-	left: 20px;
-}
+	.trabalhos h2::before {
+		font-size: 300px;
+		font-weight: 500;
+		top: 205px;
+		left: 20px;
+	}
 
-.cases img {
-	padding: 10px 0;
-	max-width: 150px;
-	margin: 0 auto;
-}
+	.cases img {
+		padding: 10px 0;
+		max-width: 150px;
+		margin: 0 auto;
+	}
 
-/* Depoimentos */
+	/* Depoimentos */
 
-.depoimento_persona {
-	padding-left: 0px;
-	min-height: auto;
-}
+	.depoimento_persona {
+		padding-left: 0px;
+		min-height: auto;
+	}
 
-.depoimento_persona h2 {
-	max-width: 300px;
-	font-size: 3em
-}
+	.depoimento_persona h2 {
+		max-width: 300px;
+		font-size: 3em
+	}
 
-.depoimento_persona span {
-    font-size: 3em;
-}
+	.depoimento_persona span {
+		font-size: 3em;
+	}
 
-.depoimento_texto {
-	margin-top: 0px;
-}
+	.depoimento_texto {
+		margin-top: 0px;
+	}
 
-.depoimento_texto p::before {
-	content: "“";
-	display: block;
-	position: relative;
-	font-size: 5em;
-	color: #FFFF1E;
-}
+	.depoimento_texto p::before {
+		content: "“";
+		display: block;
+		position: relative;
+		font-size: 5em;
+		color: #FFFF1E;
+	}
 
-.depoimento_texto p {
-	font-size: 0.85em;
-	margin-top: 40px;
-}
+	.depoimento_texto p {
+		font-size: 0.85em;
+		margin-top: 40px;
+	}
 
-.rslides_tabs {
-	margin-top: 10px;
-}
+	.rslides_tabs {
+		margin-top: 10px;
+	}
 
-/* Quebra menina pulando */
+	/* Quebra menina pulando */
 
-.quebra2 {
-	display: none;
-}
+	.quebra2 {
+		display: none;
+	}
+
+	.footer-img{
+		padding-top: 25px;
+		margin-left: -12px;
+	}
 
 }
