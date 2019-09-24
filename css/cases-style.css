@@ -14,6 +14,18 @@ p {
 	line-height: 20px;
 }
 
+h1{
+    width: 200px;
+    position: absolute;
+    display: inline;
+    font-size: 24px;
+    color: white;
+    left: 50%;
+    margin-left: -100px !important;
+    text-align: center;
+    margin-top: 6px !important;
+}
+
 .hidden{
     display: none;
 }
@@ -94,10 +106,6 @@ img {
 
 /* explicação do case */
 
-.nosso-trabalho{
-    display: flex;
-    justify-content: space-between;
-}
 
 .grid{
     width: 100%;
@@ -203,11 +211,6 @@ img {
 
     .container{
         max-width: 100%;
-    }
-
-    .nosso-trabalho{
-        margin-top: 10px;
-        margin-left: 10px;
     }
 
     .title{

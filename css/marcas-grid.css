@@ -1,0 +1,43 @@
+.marcas-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.quebra2-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #0103A7;
+}
+
+.depoimento-pessoal{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.marcas-container::before{
+    content: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .marcas-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .marcas-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

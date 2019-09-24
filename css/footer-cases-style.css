@@ -1,0 +1,129 @@
+a, a:visited, a:hover, a:visited{
+    text-decoration: none !important;
+    color: white;
+}
+
+.upper-footer-calls *{
+    display: inline;
+}
+
+.upper-footer-calls{
+    width: 80%;
+    margin-bottom: 40px;
+    padding-top: 5px;
+}
+
+.upper-footer-calls a{
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    display: inline;
+    z-index: 100;
+}
+
+footer a:hover{
+    color: #FFFF1E;
+}
+
+.upper-footer-calls h4{
+    left: 10%;
+    display: inline;
+}
+
+.other-cases-grid{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+}
+
+.other-cases-title{
+    color: white;
+    size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.other-cases{
+    background-color: rgba(1, 3, 167, 1); 
+    background-size: 100vw;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.other-unique-case{
+    display: inline;
+    max-width: 15%;
+}
+
+.other-unique-case img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.other-unique-case img:hover{
+	-webkit-transform: scale(1.03);
+	transform: scale(1.03);
+    cursor: pointer;
+}
+
+.other-cases-others:visited{
+    text-decoration: none !important;
+}
+
+.mobile-navigation{
+    display: none;
+}
+
+/* phones */
+@media only screen and (max-width: 940px){
+    .other-cases-grid{
+        display: none;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .upper-footer-calls{
+        display: none;
+    }
+
+    .mobile-navigation{
+        margin-top: 0 !important;
+        position: relative;
+        display: block;
+    }
+
+    .mobile-navigation span{
+        padding-top: 15px;
+    }
+
+    .mobile-navigation a:hover{
+        color: #FFFF1E;
+
+    }
+
+    .mobile-navigation .previous{
+        position: absolute;
+        left: 0;
+    }
+
+    .mobile-navigation .next{
+        position: absolute;
+        right: 0;
+    }
+
+
+    .other-unique-case{
+        max-width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+
+    }
+
+}
