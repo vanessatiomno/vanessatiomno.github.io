@@ -700,145 +700,149 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 980px) {
 
-.intro_left {
-	padding-left: 50px;
-}
+	.intro_left {
+		padding-left: 50px;
+	}
 
-.intro_right {
-	padding-left: 10px;
-}
+	.intro_right {
+		padding-left: 10px;
+	}
 
-/* Background bolinhas */
+	/* Background bolinhas */
 
-.bolinhas {
-	display: none;
-}
+	.bolinhas {
+		display: none;
+	}
 
-.bolinhas::before {
-	content: "";
-	transform: rotate(-130deg);
-  	-webkit-transform: rotate(-130deg);
-    display: block;
-    position: relative;
-    top: 180px;
-    width: 700px;
-    height: 40px;
-    background: #FFFF1E; /* Amarelo */
-    margin: 14px auto 10px auto;
-    z-index: -110;
-}
+	.bolinhas::before {
+		content: "";
+		transform: rotate(-130deg);
+		-webkit-transform: rotate(-130deg);
+		display: block;
+		position: relative;
+		top: 180px;
+		width: 700px;
+		height: 40px;
+		background: #FFFF1E; /* Amarelo */
+		margin: 14px auto 10px auto;
+		z-index: -110;
+	}
 
-/* Marcas Fortes */
+	/* Marcas Fortes */
 
-.intro_marcas {
-	margin: 40px 10px 40px 10px;
-	padding-left: 50px;
-}
+	.intro_marcas {
+		margin: 40px 10px 40px 10px;
+		padding-left: 50px;
+	}
 
-.intro_marcas::before {
-	transform: rotate(-155deg);
-  	-webkit-transform: rotate(-155deg);
-  	width: 650px;
-}
+	.intro_marcas::before {
+		transform: rotate(-155deg);
+		-webkit-transform: rotate(-155deg);
+		width: 650px;
+	}
 
-.intro_marcas p {
-	max-width: 200px;
-}
+	.intro_marcas p {
+		max-width: 200px;
+	}
 
-.intro_marcas::after {
-    top: 170px;
-    left: 150px;
-}
+	.intro_marcas::after {
+		top: 170px;
+		left: 150px;
+	}
 
-.intro_marcas_subtitulo {
-	padding-left: 10px;
-}
-
-
-.intro_marcas_subtitulo span::after {
-    left: -20px;
-}
-
-.trabalhos h2 {
-	font-size: 120px;
-	padding: 150px 0;
-}
-
-.trabalhos h2::before {
-	content: ">";
-	font-size: 800px;
-	font-weight: 500;
-	position: absolute;
-	top: 235px;
-	left: 220px;
-	color: #FFFF1E; /* Amarelo */
-	z-index: -1;
-}
-
-.cases img {
-	padding: 10px 30px;
-}
-
-/* Depoimentos */
-
-.depoimentos {
-	margin: 60px auto;
-	z-index: -100;
-}
-
-.depoimento_persona {
-	padding-left: 50px;
-}
-
-.depoimento_persona h2 {
-	max-width: 300px;
-	font-size: 3em
-}
+	.intro_marcas_subtitulo {
+		padding-left: 10px;
+	}
 
 
-.depoimento_persona h2::after {
-    top: 60px;
-    left: 90px;
-    width: 200px;
-}
+	.intro_marcas_subtitulo span::after {
+		left: -20px;
+	}
+
+	.trabalhos h2 {
+		font-size: 120px;
+		padding: 150px 0;
+	}
+
+	.trabalhos h2::before {
+		content: ">";
+		font-size: 800px;
+		font-weight: 500;
+		position: absolute;
+		top: 235px;
+		left: 220px;
+		color: #FFFF1E; /* Amarelo */
+		z-index: -1;
+	}
+
+	.cases img {
+		padding: 10px 30px;
+	}
+
+	/* Depoimentos */
+
+	.depoimentos {
+		margin: 60px auto;
+		z-index: -100;
+	}
+
+	.depoimento_persona {
+		padding-left: 50px;
+	}
+
+	.depoimento_persona h2 {
+		max-width: 300px;
+		font-size: 3em
+	}
 
 
-.depoimento_persona span {
-    font-size: 3em;
-}
+	.depoimento_persona h2::after {
+		top: 60px;
+		left: 90px;
+		width: 200px;
+	}
 
 
-.depoimento_texto p::before {
-	content: "“";
-	display: block;
-	position: relative;
-	font-size: 5.5em;
-	color: #FFFF1E;
-}
+	.depoimento_persona span {
+		font-size: 3em;
+	}
 
-.depoimento_texto p {
-	font-size: 0.85em;
-}
 
-/* Quebra menina pulando */
+	.depoimento_texto p::before {
+		content: "“";
+		display: block;
+		position: relative;
+		font-size: 5.5em;
+		color: #FFFF1E;
+	}
 
-.quebra2_left p {
-	margin: 200px auto;
-	font-size: 1.05em;
-	letter-spacing: .001em;
-	max-width: 250px;
-	font-weight: 600;
-	padding-left: 90px;
-}
+	.depoimento_texto p {
+		font-size: 0.85em;
+	}
 
-.quebra2_right p {
-	margin: 200px auto;
-	letter-spacing: .001em;
-	font-size: 1.05em;
-	max-width: 250px;
-	font-weight: 600;
-	padding-right: 90px;
-}
+	/* Quebra menina pulando */
+
+	.quebra2_left p {
+		margin: 200px auto;
+		font-size: 1.05em;
+		letter-spacing: .001em;
+		max-width: 250px;
+		font-weight: 600;
+		padding-left: 90px;
+	}
+
+	.quebra2_right p {
+		margin: 200px auto;
+		letter-spacing: .001em;
+		font-size: 1.05em;
+		max-width: 250px;
+		font-weight: 600;
+		padding-right: 90px;
+	}
+
+	.footer-img{
+		margin-left: 127%;
+	}
 
 }
 
