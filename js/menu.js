@@ -22,7 +22,7 @@ $(function() {
 	$(window).scroll(function(){
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop != 0)
-			$('#navbar').stop().animate({'opacity':'0.2'},300);
+			$('#navbar').stop().animate({'opacity':'0.0'},300);
 		else	
 			$('#navbar').stop().animate({'opacity':'1'},300);
 	});
@@ -37,7 +37,7 @@ $(function() {
 		function (e) {
 			var scrollTop = $(window).scrollTop();
 			if(scrollTop != 0){
-				$('#navbar').stop().animate({'opacity':'0.2'},150);
+				$('#navbar').stop().animate({'opacity':'0.0'},150);
 			}
 		}
 	);
