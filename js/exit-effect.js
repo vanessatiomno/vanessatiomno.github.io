@@ -8,12 +8,12 @@ allLinks.forEach(function(l){
         e.preventDefault();
         html.classList.add('animated');
         html.classList.add('fadeOut');
-        html.classList.add('slow');
+        html.classList.add('fast');
         let target = e.target.parentNode.getAttribute("href");
         console.log(target);
         setTimeout(function(){
             window.location = target;
-        }, 1200);
+        }, 800);
         
         
     })
