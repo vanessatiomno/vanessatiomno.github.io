@@ -22,7 +22,8 @@ h1{
 }
 
 .grid{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
@@ -50,7 +51,7 @@ h1{
 }
 
 .unique-case img{
-    height: 42vh;
+    height: 40vh;
     width: auto;
 	-webkit-transform: scale(1);
 	transform: scale(1);
