@@ -24,7 +24,7 @@ h1{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     width: 100%;
 }
@@ -151,8 +151,9 @@ h1{
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 
     .grid{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* flex-wrap: wrap; */
         justify-content: space-between;
         /* width: 70%; */
     }
@@ -194,7 +195,7 @@ h1{
     }
 
     .unique-case img{
-        height: 50vh;
+        height: 35vh;
     }    
 
 }
@@ -208,9 +209,16 @@ h1{
         text-align: center;
     }
     .grid{
+        display: grid;
+        grid-template-columns: 1fr;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+
+    .unique-case{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .unique-case img{
