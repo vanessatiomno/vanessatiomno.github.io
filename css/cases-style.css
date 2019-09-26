@@ -240,7 +240,7 @@ img {
 
     .grid{
         display: inline-block;
-        margin: 10px;
+        margin: 10px 0;
         max-width: 100%;
     }
 
