@@ -37,7 +37,7 @@ window.addEventListener('scroll', scrollAppear);
 
 // 1st image loads as page is loaded
 document.addEventListener('DOMContentLoaded', function(){
-    var img1 = document.querySelector(".img-1");
+    var img1 = document.querySelector(".img-2");
     img1.classList.add('appear');
 });
 >>>>>>> commiting changes to Cases
