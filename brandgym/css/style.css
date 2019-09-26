@@ -1,0 +1,934 @@
+/* Estilos Gerais */
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Source Code Pro', monospace;
+}
+
+p {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+h1, h2, h3, h4 {
+	padding: 0;
+	margin:0;
+}
+
+h2 {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 54px;
+	color: #0103A7; /* azul */
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 1.01em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.hidden{
+	position: -100%;
+}
+
+
+/* Header */
+
+.menu {
+	background: #0103A7; /* azul */
+	position: fixed;
+	border-bottom: 2px solid yellow;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+}
+
+.menu > div {
+	display: inline-block;
+}
+
+.menu img {
+	display: inline-block;	
+	padding: 10px 20px;
+}
+
+.menu nav {
+	text-align: right;
+	padding: 10px 50px;
+}
+
+.menu nav ul {
+	padding: 60px 0;
+	margin: 0px;
+	background-color: #0103A7;
+}
+
+.menu nav li {
+	display: inline-block;
+	text-align: left;
+}
+
+.menu nav li a {
+	display: block;
+	color: white;
+	padding: 30px 70px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	font-size: 26px;
+}
+
+.mobile-btn {
+	display: block;
+	color: white;
+	width: 36px;
+	height: 36px;
+	border-top: 4px solid;
+	margin: 20px 20px 0 0;
+	float: right;
+	position: relative;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.mobile-btn::after, .mobile-btn::before {
+	content: '';
+	display: block;
+	height: 4px;
+	margin-top: 6px;
+	background: currentColor;
+	position: relative;
+	transition: transform .2s ease;
+}
+
+.mobile-btn.active {
+	border-top-color: transparent;
+}
+
+.mobile-btn.active::after {
+	margin-top: 0px;
+	top: 2px;
+	transform: rotate(45deg);
+}
+
+.mobile-btn.active::before {
+	margin-top: 0px;
+	top: 6px;
+	transform: rotate(135deg);
+}
+
+.menu-nav.mobile-menu {
+	position: fixed;
+	background: #0103A7;
+	padding: 10px 0;
+	top: 0;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate3d(60px, 0px, 0px);
+	transition: .3s;
+	z-index: -2000;
+}
+
+.menu-nav.mobile-menu.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.menu-nav.mobile-menu li {
+	display: block;
+	padding: 10px 50px;
+}
+
+.menu-nav.mobile-menu li a {
+	width: 100%;
+	text-align: right;
+}
+
+.menu-nav.mobile-menu li a:hover {
+	width: 100%;
+	text-align: right;
+	color: #FFFF1E
+	
+}
+
+/* Main BG */
+
+.main_bg {
+	background: #0103A7;
+	height: 580px;
+}
+
+.main_bg img {
+	margin: 0 auto;
+	padding: 240px 0;
+	max-width: 300px;
+}
+
+/* Introdução */
+
+.branding {
+	margin: 60px auto;
+	z-index: -100;
+}
+
+.intro_left {
+	padding-left: 150px
+}
+
+.intro_left h2 {
+	margin: 40px 0 40px 0;
+	position: relative;
+}
+
+.intro_left p {
+	text-transform: uppercase;
+	color: #0103A7; /* azul */
+	font-weight: 500;
+	font-size: 3em;
+	line-height: 1.1em;
+	letter-spacing: .009em;
+}
+
+.intro_left h2::after {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: -20px;
+    width: 120px;
+    height: 30px;
+    background: #FFFF1E; /* Amarelo */
+    margin: 14px auto 10px auto;
+    z-index: -10;
+}
+
+.intro_right {
+	margin-left: 10px;
+}
+
+.intro_right img {
+	max-width: 300px;
+
+}
+
+.intro_right p {
+	font-weight: 600;
+	color: #0103A7; /* azul */
+	line-height: 1.6em;
+	max-width: 230px;
+	margin-top: 20px;
+}
+
+/* Background bolinhas */
+
+.bolinhas {
+	z-index: -100;
+	background: url("../img/bolinhas_bg.png") repeat;
+	width: 100%;
+	height: 100px;
+}
+
+/* Marcas Fortes */
+
+.marcas {
+	margin: 60px auto;
+	z-index: -100;
+}
+
+.intro_marcas {
+	color: #0103A7; /* azul */
+	margin: 40px 10px 40px 0;
+	padding-left: 150px;
+	position: relative;
+}
+
+.intro_marcas::before {
+	content: "";
+	transform: rotate(-135deg);
+  	-webkit-transform: rotate(-135deg);
+    display: block;
+    position: relative;
+    top: 0px;
+    width: 700px;
+    height: 40px;
+    background: #FFFF1E; /* Amarelo */
+    margin: 14px auto 10px auto;
+    z-index: -100;
+}
+
+.intro_marcas p {
+	max-width: 195px;
+	line-height: 1.6em;
+	font-weight: 600;
+}
+
+.intro_marcas::after {
+	content: ">>>";
+    display: block;
+    position: absolute;
+    font-size: 5em;
+    font-weight: 600;
+    letter-spacing: -0.2em;
+    top: 240px;
+    left: 170px;
+    color: #FFFF1E; /* Amarelo */
+    margin: 14px auto 10px auto;
+    z-index: -10;
+}
+
+.intro_marcas_subtitulo h2 {
+	max-width: 300px;
+	font-weight: 700;
+}
+
+.intro_marcas_subtitulo span {
+	color: #0103A7; /* azul */
+	font-size: 2em;
+	font-weight: 700;
+	display: none; /*block */
+	position: relative;
+	text-transform: uppercase;
+	text-decoration: underline;
+	margin-top: 20px;
+
+}
+
+.intro_marcas_subtitulo span::after {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 120px;
+    height: 30px;
+    background: #FFFF1E; /* Amarelo */
+    margin: 14px auto 10px auto;
+    z-index: -10;
+}
+
+.trabalhos_bg {
+	margin: 60px auto;
+	z-index: -100;
+}
+
+.trabalhos {
+	background: url("../img/bolinhas_bg.png") repeat;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: -100;
+}
+
+.trabalhos h2::before {
+	content: ">";
+	font-size: 900px;
+	font-weight: 400;
+	position: absolute;
+	top: 275px;
+	left: 400px;
+	color: #FFFF1E; /* Amarelo */
+	z-index: -1;
+}
+
+.trabalhos h2 {
+	font-size: 130px;
+	color: #0103A7; /* azul */
+	width: 500px;
+	padding: 180px 0;
+	margin: 0 auto;
+	line-height: 0.9em;
+}
+
+.cases {
+	background: #0103A7; /* azul */
+	padding: 60px 0;
+}
+
+.cases img {
+	padding: 10px 50px;
+	max-width: 100%;
+}
+
+/* Depoimentos */
+
+.depoimentos {
+	margin: 60px auto;
+	z-index: -100;
+}
+
+.depoimento_persona {
+	padding-left: 150px;
+	min-height: 335px;
+}
+
+.depoimento_persona h2 {
+	max-width: 300px;
+}
+
+.depoimento_persona span::before {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    width: 250px;
+    height: 50px;
+    background: #FFFF1E; /* Amarelo */
+    margin: 14px auto 10px auto;
+    z-index: -10;
+}
+
+.depoimento_persona span {
+	margin-top: 20px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 50px;
+    display: inline-block;
+    max-width: 300px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.05em;
+	-webkit-text-stroke: 1px #0103A7;
+    color: transparent;
+}
+
+.depoimento_texto {
+	margin-top: 30px;
+}
+
+.depoimento_texto p::before {
+	content: "“";
+	display: block;
+	position: relative;
+	font-size: 6em;
+	color: #FFFF1E;
+}
+
+.depoimento_texto p {
+	font-weight: 700;
+	color: #0103A7;
+	max-width: 300px;
+}
+
+/*Plugin de Slide*/
+
+.depoimentos_lista div:last-of-type {
+	margin-top: 20px;
+}
+
+.rslides, .rslides_depoimentos {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.rslides li, .rslides_depoimentos li{
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child, .rslides_depoimentos li:first-child{
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.rslides img, .rslides_depoimentos img {
+	display: block;
+	height: auto;
+	width: 100%;
+	border: 0;
+}
+
+.rslides_tabs {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.rslides_tabs li{
+	display: inline;
+	margin: 0 5px;
+}
+
+.rslides_tabs li a{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #0103A7;
+	overflow: hidden;
+	text-indent: -200px;
+}
+
+.rslides_tabs li a:hover, .rslides_tabs li.rslides_here a {
+	background: #FFFF1E;
+	color: #FFFF1E;
+}
+
+/* Quebra menina pulando */
+
+.quebra2 {
+	margin: 60px auto;
+	z-index: -110;
+	background: url("../img/bg_menina.jpg") no-repeat center;
+	background-size: cover;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.quebra2_left p {
+	margin: 240px auto;
+	font-size: 1.05em;
+	text-align: right;
+	letter-spacing: .002em;
+	color: #0103A7;
+	max-width: 280px;
+	font-weight: 600;
+	padding-left: 80px;
+}
+
+.quebra2_right p {
+	margin: 240px auto;
+	letter-spacing: .002em;
+	font-size: 1.05em;
+	color: #FFF;
+	max-width: 280px;
+	font-weight: 600;
+	padding-right: 80px;
+}
+
+/* Footer */
+
+.footer {
+	margin: 40px auto 0 auto;
+}
+
+.bolinhas_footer {
+	z-index: -100;
+	background: url("../img/bolinhas_bg.png") repeat;
+	width: 100%;
+	margin-top: 40px;
+	height: 50px;
+}
+
+.footer p {
+	letter-spacing: .002em;
+	font-size: 1.05em;
+	color: #0103A7; /* azul */
+	max-width: 300px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.footer a{
+	text-decoration: none;
+	color: #0103A7;
+	letter-spacing: .002em;
+    font-size: 1.05em;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer a:visited{
+	text-decoration: none;
+	color: #0103A7;
+	letter-spacing: .002em;
+    font-size: 1.05em;
+  	max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer a:active{
+	text-decoration: none;
+	color: #0103A7;
+	letter-spacing: .002em;
+    font-size: 1.05em;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.endereco::before {
+	content: "";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 160px;
+    height: 160px;
+    background: #FFFF1E; /* Amarelo */
+    margin: 14px auto 10px auto;
+    z-index: -1;
+}
+
+.fa {
+	height: 100%;
+	background: #FFF;
+}
+
+
+/*Animações*/
+
+.js .logo_bg, .js .branding, .js .menu {
+	opacity: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
+
+
+
+/* Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.intro_left {
+	padding-left: 50px;
+}
+
+.intro_right {
+	padding-left: 10px;
+}
+
+/* Background bolinhas */
+
+.bolinhas {
+	display: none;
+}
+
+.bolinhas::before {
+	content: "";
+	transform: rotate(-130deg);
+  	-webkit-transform: rotate(-130deg);
+    display: block;
+    position: relative;
+    top: 180px;
+    width: 700px;
+    height: 40px;
+    background: #FFFF1E; /* Amarelo */
+    margin: 14px auto 10px auto;
+    z-index: -110;
+}
+
+/* Marcas Fortes */
+
+.intro_marcas {
+	margin: 40px 10px 40px 10px;
+	padding-left: 50px;
+}
+
+.intro_marcas::before {
+	transform: rotate(-155deg);
+  	-webkit-transform: rotate(-155deg);
+  	width: 650px;
+}
+
+.intro_marcas p {
+	max-width: 200px;
+}
+
+.intro_marcas::after {
+    top: 170px;
+    left: 150px;
+}
+
+.intro_marcas_subtitulo {
+	padding-left: 10px;
+}
+
+
+.intro_marcas_subtitulo span::after {
+    left: -20px;
+}
+
+.trabalhos h2 {
+	font-size: 120px;
+	padding: 150px 0;
+}
+
+.trabalhos h2::before {
+	content: ">";
+	font-size: 800px;
+	font-weight: 500;
+	position: absolute;
+	top: 235px;
+	left: 220px;
+	color: #FFFF1E; /* Amarelo */
+	z-index: -1;
+}
+
+.cases img {
+	padding: 10px 30px;
+}
+
+/* Depoimentos */
+
+.depoimentos {
+	margin: 60px auto;
+	z-index: -100;
+}
+
+.depoimento_persona {
+	padding-left: 50px;
+}
+
+.depoimento_persona h2 {
+	max-width: 300px;
+	font-size: 3em
+}
+
+
+.depoimento_persona h2::after {
+    top: 60px;
+    left: 90px;
+    width: 200px;
+}
+
+
+.depoimento_persona span {
+    font-size: 3em;
+}
+
+
+.depoimento_texto p::before {
+	content: "“";
+	display: block;
+	position: relative;
+	font-size: 5.5em;
+	color: #FFFF1E;
+}
+
+.depoimento_texto p {
+	font-size: 0.85em;
+}
+
+/* Quebra menina pulando */
+
+.quebra2_left p {
+	margin: 200px auto;
+	font-size: 1.05em;
+	letter-spacing: .001em;
+	max-width: 250px;
+	font-weight: 600;
+	padding-left: 90px;
+}
+
+.quebra2_right p {
+	margin: 200px auto;
+	letter-spacing: .001em;
+	font-size: 1.05em;
+	max-width: 250px;
+	font-weight: 600;
+	padding-right: 90px;
+}
+
+}
+
+/* Smarthphones */
+
+@media only screen and (max-width: 767px) {
+
+.menu nav li a {
+	padding: 20px 0px;
+}
+
+.menu nav li a::after {
+	display: none;
+}
+
+.main_bg img {
+	padding: 220px 0;
+	max-width: 200px;
+}
+
+.intro_left {
+	padding-left: 0px;
+}
+
+.intro_left h2 {
+	font-size: 3em;
+}
+
+.intro_left p {
+	font-size: 2em;
+}
+
+.intro_right {
+	padding-left: 0px;
+	margin: 0 auto;
+}
+
+/* Background bolinhas */
+
+.bolinhas {
+	display: none;
+}
+
+.bolinhas::before {
+	content: "";
+	transform: rotate(-135deg);
+  	-webkit-transform: rotate(-135deg);
+    top: 80px;
+    width: 300px;
+}
+
+/* Marcas Fortes */
+
+.intro_marcas {
+	margin: 40px 0;
+	padding-left: 0px;
+}
+
+.intro_marcas::before {
+	transform: rotate(-170deg);
+  	-webkit-transform: rotate(-170deg);
+  	top: -50px;
+    width: 250px;
+    height: 40px;
+}
+
+.intro_marcas p {
+	max-width: 200px;
+}
+
+.intro_marcas::after {
+    top: 120px;
+    left: 180px;
+    transform: rotate(-270deg);
+  	-webkit-transform: rotate(-270deg);
+}
+
+.intro_marcas_subtitulo {
+	padding-left: 0px;
+}
+
+.intro_marcas_subtitulo h2{
+	font-size: 3em;
+	margin: 0 auto;
+}
+
+.trabalhos h2 {
+	font-size: 100px;
+	padding: 120px 0;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.trabalhos h2::before {
+	font-size: 300px;
+	font-weight: 500;
+	top: 205px;
+	left: 20px;
+}
+
+.cases img {
+	padding: 10px 0;
+	max-width: 150px;
+	margin: 0 auto;
+}
+
+/* Depoimentos */
+
+.depoimento_persona {
+	padding-left: 0px;
+	min-height: auto;
+}
+
+.depoimento_persona h2 {
+	max-width: 300px;
+	font-size: 3em
+}
+
+.depoimento_persona span {
+    font-size: 3em;
+}
+
+.depoimento_texto {
+	margin-top: 0px;
+}
+
+.depoimento_texto p::before {
+	content: "“";
+	display: block;
+	position: relative;
+	font-size: 5em;
+	color: #FFFF1E;
+}
+
+.depoimento_texto p {
+	font-size: 0.85em;
+	margin-top: 40px;
+}
+
+.rslides_tabs {
+	margin-top: 10px;
+}
+
+/* Quebra menina pulando */
+
+.quebra2 {
+	display: none;
+}
+
+}

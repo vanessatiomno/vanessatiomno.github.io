@@ -210,7 +210,13 @@ img {
 @media only screen and (max-width: 940px){
 
     .container{
-        max-width: 100%;
+        width: 100%;
+    }
+
+    .nosso-trabalho{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .title{
@@ -284,6 +290,12 @@ img {
     .grid div{
         max-width: 100%;
     }
+
+    .mobile-navigation .next{
+        right: 5%;
+    }
+    
+
 
 
 }

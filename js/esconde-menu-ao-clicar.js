@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var btnMenu = document.querySelector(".mobile-btn");
 var menuMobile = document.querySelector(".mobile-menu");
 
@@ -11,3 +12,18 @@ menuMobile.addEventListener('click', function(){
     this.classList.remove('active');
     btnMenu.classList.remove('active');
 });
+=======
+var btnMenu = document.querySelector(".mobile-btn");
+var menuMobile = document.querySelector(".mobile-menu");
+
+// console.log(menuMobile);
+// console.log(btnMenu);
+
+
+menuMobile.addEventListener('click', function(){
+    // console.log('fui clicado');
+    
+    this.classList.remove('active');
+    btnMenu.classList.remove('active');
+});
+>>>>>>> commiting changes to Cases
