@@ -34,9 +34,16 @@ h1{
 }
 
 #solucao-read-more,
-#contexto-read-more{
+#contexto-read-more,
+#solucao-menos,
+#contexto-menos{
     cursor: pointer;
     color: grey;
+}
+
+#solucao-menos,
+#contexto-menos{
+    text-align: right;
 }
 
 li{
