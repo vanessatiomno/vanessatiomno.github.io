@@ -1,3 +1,6 @@
+#contexto-title{
+    z-index: 1000000;
+}
 
 html{
 	scroll-behavior: smooth;
@@ -53,7 +56,7 @@ h2 {
 	text-transform: uppercase;
 	font-weight: bold;
     line-height: 1.6em;
-    width: 95%;
+    width: 100%;
 }
 
 .solucao .subtitle h2::after{
@@ -61,7 +64,7 @@ h2 {
 }
 
 .solucao p{
-    max-width: 95% !important   ;
+    max-width: 100% !important   ;
 }
 
 img {
@@ -134,20 +137,20 @@ img {
 }
 
 .grid .subtitle{
-    width: 70%;
+    width: 80%;
 }
 
 .grid .solucao .subtitle, .grid .solucao .content {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 70%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .grid p{
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .subtitle h2::after{
@@ -167,7 +170,7 @@ img {
 }
 
 .trabalho .content{
-    margin-left: 35%;
+    margin-left: 20%;
 }
 
 /* prints do case */
@@ -208,6 +211,14 @@ img {
 
 /* phones */
 @media only screen and (max-width: 940px){
+
+    .mobile-hidden{
+        display: none !important;
+    }
+
+    .contexto{
+        display: block !important;
+    }
 
     .container{
         width: 100%;

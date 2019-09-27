@@ -6,11 +6,11 @@ html{
 }
 
 body {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'B612 Mono', monospace;
 }
 
 p {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'B612 Mono', monospace;
 	font-size: 14px;
 	line-height: 26px;
 }
@@ -21,7 +21,7 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'B612 Mono', monospace;
 	font-size: 54px;
 	color: #0103A7; /* azul */
 	text-transform: uppercase;
@@ -415,7 +415,7 @@ img {
 
 .depoimento_persona span {
 	margin-top: 20px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'B612 Mono', monospace;
     font-size: 50px;
     display: inline-block;
     max-width: 300px;
@@ -544,7 +544,7 @@ img {
 }
 
 .quebra2-text>p{
-	font-family: 'Source Code Pro', monospace; ;
+	font-family: 'B612 Mono', monospace; ;
 	color: white;
 	text-transform: uppercase;
 	text-align: left;
@@ -560,7 +560,7 @@ img {
 .quebra2-text>p>.letra-outline{
 	color: white;
 	-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 0.3px;
 	-webkit-text-stroke-color: white;
 
 }

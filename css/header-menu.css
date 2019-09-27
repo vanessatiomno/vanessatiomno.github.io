@@ -112,6 +112,7 @@
 
 .menu-options{
     visibility: hidden;
+    display: none;
 }
 
 .menu-options.active {
@@ -123,6 +124,7 @@
     position: relative;
     visibility: visible;
     z-index: 1000;
+    display: block;
 }
 
 .menu-options.active ul{
