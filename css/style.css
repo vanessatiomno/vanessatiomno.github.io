@@ -6,11 +6,11 @@ html{
 }
 
 body {
-	font-family: 'B612 Mono', monospace;
+	font-family: 'Armata', sans-serif;
 }
 
 p {
-	font-family: 'B612 Mono', monospace;
+	font-family: 'Armata', sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 }
@@ -21,7 +21,7 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-	font-family: 'B612 Mono', monospace;
+	font-family: 'Armata', sans-serif;
 	font-size: 54px;
 	color: #0103A7; /* azul */
 	text-transform: uppercase;
@@ -415,7 +415,7 @@ img {
 
 .depoimento_persona span {
 	margin-top: 20px;
-    font-family: 'B612 Mono', monospace;
+    font-family: 'Armata', sans-serif;
     font-size: 50px;
     display: inline-block;
     max-width: 300px;
@@ -544,7 +544,7 @@ img {
 }
 
 .quebra2-text>p{
-	font-family: 'B612 Mono', monospace; ;
+	font-family: 'Armata', sans-serif;
 	color: white;
 	text-transform: uppercase;
 	text-align: left;
