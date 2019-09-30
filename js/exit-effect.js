@@ -1,6 +1,6 @@
 let allLinks = document.querySelectorAll('a');
 let html = document.querySelector('html')
-console.log(allLinks);
+// console.log(allLinks);
 
 
 allLinks.forEach(function(l){
@@ -10,7 +10,7 @@ allLinks.forEach(function(l){
         html.classList.add('fadeOut');
         html.classList.add('fast');
         let target = e.target.parentNode.getAttribute("href");
-        console.log(target);
+        // console.log(target);
         setTimeout(function(){
             window.location = target;
         }, 800);

@@ -1,9 +1,6 @@
 let btnMenu = document.querySelector('#nav-icon');
 let menuOptions = document.querySelector('.menu-options');
-
-console.log(btnMenu);
-console.log(menuOptions);
-
+	
 btnMenu.addEventListener('click', () => {
     menuOptions.classList.toggle('active');
     btnMenu.classList.toggle('active');
