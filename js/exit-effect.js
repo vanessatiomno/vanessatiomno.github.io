@@ -1,4 +1,4 @@
-let allLinks = document.querySelectorAll('a');
+let allLinks = document.querySelectorAll('.unique-case');
 let html = document.querySelector('html')
 // console.log(allLinks);
 
