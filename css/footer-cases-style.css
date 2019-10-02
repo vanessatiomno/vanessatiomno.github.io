@@ -79,6 +79,11 @@ footer a:hover{
 .other-cases-others:visited{
     text-decoration: none !important;
 }
+
+.upper-footer-calls a{
+    z-index: 0;
+}
+
 .other-cases-name{
     font-size: 14px;
 }

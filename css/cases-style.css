@@ -11,6 +11,10 @@ body {
 	font-family: 'Source Code Pro', monospace;
 }
 
+main{
+    margin-top: 100px;
+}
+
 p {
 	font-family: 'Source Code Pro', monospace;
 	font-size: 14px;
@@ -32,6 +36,7 @@ h1{
 .hidden{
     display: none;
 }
+
 
 #solucao-read-more,
 #contexto-read-more,

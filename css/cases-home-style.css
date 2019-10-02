@@ -11,6 +11,7 @@ body{
 h1{
     font-size: 44px;
     font-weight: bolder;
+    margin-top: 100px;
 }
 
 
@@ -42,9 +43,6 @@ h1{
     color: #0103A7;
     font-weight: bold;
 }
-
-
-
 
 .line{
     margin-bottom: 30px;
@@ -185,6 +183,7 @@ h1{
     .upper-page h1{
         font-size: 34px;
         text-align: left;
+        
     }
     .container{
         width: 70%;
