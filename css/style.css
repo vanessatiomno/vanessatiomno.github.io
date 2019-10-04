@@ -35,21 +35,21 @@ img {
 }
 
 .hidden{
-	position: -100%;
+	display: none;
 }
 
 
 /* Header */
 
 .menu {
-	background: #0103A7; /* azul */
-	position: fixed;
+	/* background: #0103A7; azul */
+	/* position: fixed; */
 	/* border-bottom: 2px solid yellow; */
-	width: 100%;
+	/* width: 100%;
 	top: 0;
-	z-index: 100;
+	z-index: 100; */
 }
-
+/* 
 .menu > div {
 	display: inline-block;
 }
@@ -169,7 +169,7 @@ img {
 
 .estilo-estados{
 	font-weight: bolder;
-}
+} */
 
 /* Main BG */
 
@@ -646,7 +646,7 @@ img {
 /*Animações*/
 
 .js .logo_bg, .js .branding, .js .menu {
-	opacity: 0;
+	/* opacity: 0; */
 }
 
 .menu-fade-out{
@@ -851,7 +851,7 @@ img {
 @media only screen and (max-width: 767px) {
 
 	.menu nav li a {
-		padding: 20px 0px;
+		padding: 20px 70px;
 	}
 
 	.menu nav li a::after {

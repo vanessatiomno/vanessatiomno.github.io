@@ -15,17 +15,17 @@ $(".rslides_depoimentos").responsiveSlides({
 
 // Animar ao renderizar
 
-Visibility.onVisible(function(){
-	setTimeout(function () {
-		$(".menu").addClass("animated fadeInDown");
-	}, 300);
-	setTimeout(function () {
-		$(".logo_bg").addClass("animated fadeInDown");
-	}, 600);
-	setTimeout(function () {
-		$(".branding").addClass("animated fadeInDown");
-	}, 800);
-});
+// Visibility.onVisible(function(){
+// 	setTimeout(function () {
+// 		$(".menu").addClass("animated fadeInDown");
+// 	}, 300);
+// 	setTimeout(function () {
+// 		$(".logo_bg").addClass("animated fadeInDown");
+// 	}, 600);
+// 	setTimeout(function () {
+// 		$(".branding").addClass("animated fadeInDown");
+// 	}, 800);
+// });
 
 // Formulario
 

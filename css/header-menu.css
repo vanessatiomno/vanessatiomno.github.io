@@ -13,19 +13,23 @@ h1 {
     background: #0103A7;
     /* azul */
     position: fixed;
-    /* border-bottom: 2px solid yellow; */
     width: 100%;
-    height: 50px;
+    /* border-bottom: 2px solid yellow; */
     top: 0;
-    z-index: 100;
-    opacity: 1;
-    visibility: visible;
-    clip-path: circle(100vw at 90% -10%);
-    transition: all 1.0s ease;
+    z-index: 99999;
+    height: 50px;;
 }
 
 .active {
     transition: .4s ease;
+    z-index: 100;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1.0s ease;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
 }
 
 
@@ -136,7 +140,7 @@ h1 {
     visibility: visible;
     z-index: 1000;
     display: block;
-    clip-path: circle(85% at 90% -10%);
+    /* clip-path: circle(85% at 90% -10%); */
     transition: all 1.0s ease;
 
 }
@@ -180,13 +184,11 @@ h1 {
     .menu-options li {
         padding-right: 0;
         /* text-align: center; */
+        margin-bottom: 15%;
     }
-    .menu-options.active {
-        clip-path: ellipse(95% 95% at 90% -10%);
-        transition: all 1.0s ease;
-    }
+    
     .menu-options.active ul {
-        padding-top: 0;
+        padding-top: 5%;
         padding-left: 5%;
     }
 

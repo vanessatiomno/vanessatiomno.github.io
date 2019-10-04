@@ -2,12 +2,15 @@ let buttonMenu = document.querySelector('#nav-icon');
 let menuOptions = document.querySelector('.menu-options');
 let clientName = document.querySelector('.client-name-title');
 
+
+
 buttonMenu.addEventListener('click', () => {
     menuOptions.classList.toggle('active');
     buttonMenu.classList.toggle('active');
     if(clientName != null){
         clientName.classList.toggle('hidden');
     }
+
 })
 
 menuOptions.addEventListener('click', () => {
@@ -16,7 +19,8 @@ menuOptions.addEventListener('click', () => {
     }
     menuOptions.classList.remove('active');
     buttonMenu.classList.remove('active');
-    btn.classList.toggle('open')
+    btn.classList.toggle('open');
+
 })
 
 
