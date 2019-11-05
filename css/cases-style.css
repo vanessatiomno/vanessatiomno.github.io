@@ -164,7 +164,7 @@ img {
 .grid p{
     max-width: 80%;
     letter-spacing: 0.5px;
-    text-align: justify;
+    text-align: start;
 }
 
 .subtitle h2::after{

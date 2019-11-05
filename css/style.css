@@ -5,6 +5,11 @@ html{
 	box-sizing: border-box;
 }
 
+a:visited{
+	text-decoration: none;
+	cursor: pointer;
+}
+
 body {
 	font-family: 'Armata', sans-serif;
 }
