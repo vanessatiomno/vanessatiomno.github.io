@@ -96,6 +96,21 @@
 .elementor-widget-wp-widget-tag_cloud .eael-protected-content-message, .elementor-widget-wp-widget-tag_cloud .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
 .elementor-widget-wp-widget-nav_menu .eael-protected-content-message, .elementor-widget-wp-widget-nav_menu .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
 .elementor-widget-wp-widget-custom_html .eael-protected-content-message, .elementor-widget-wp-widget-custom_html .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
+.elementor-widget-emage_hover_effects .imghvr {background: #6ec1e4;}
+.elementor-widget-emage_hover_effects .imghvr-title {color: #6ec1e4;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-emage_hover_effects .imghvr-subtitle {color: #6ec1e4;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-emage_hover_effects .imghvr-content {color: #6ec1e4;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-emage_hover_effects .imghvr-icon {color: #6ec1e4;}
+.elementor-widget-emage_hover_effects .imghvr-button {color: #6ec1e4;background: #6ec1e4;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-emage_hover_effects .eael-protected-content-message, .elementor-widget-emage_hover_effects .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
+.elementor-widget-emage_post_grid .imghvr {background: #6ec1e4;}
+.elementor-widget-emage_post_grid .imghvr-title {color: #6ec1e4;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-emage_post_grid .imghvr-content {color: #6ec1e4;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-emage_post_grid .imghvr-subtitle, .elementor-widget-emage_post_grid .imghvr-subtitle a {color: #6ec1e4;}
+.elementor-widget-emage_post_grid .imghvr-subtitle {font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-emage_post_grid .imghvr-subtitle svg {stroke: #6ec1e4;}
+.elementor-widget-emage_post_grid .imghvr-cat {color: #6ec1e4;background: #6ec1e4;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-emage_post_grid .eael-protected-content-message, .elementor-widget-emage_post_grid .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
 .elementor-widget-eael-adv-accordion .eael-protected-content-message, .elementor-widget-eael-adv-accordion .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
 .elementor-widget-eael-google-map .eael-protected-content-message, .elementor-widget-eael-google-map .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
 .elementor-widget-eael-adv-tabs .eael-protected-content-message, .elementor-widget-eael-adv-tabs .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
@@ -278,6 +293,7 @@
 .elementor-widget-eael-twitter-feed-carousel .eael-protected-content-message, .elementor-widget-eael-twitter-feed-carousel .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
 .elementor-widget-eael-weform .eael-weform-container ul.wpuf-form .wpuf-submit input[type="submit"] {font-family: "Roboto",Sans-serif;font-weight: 600;}
 .elementor-widget-eael-weform .eael-protected-content-message, .elementor-widget-eael-weform .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
+.elementor-widget-eael-woo-checkout .eael-protected-content-message, .elementor-widget-eael-woo-checkout .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
 .elementor-widget-eael-woo-collections .eael-woo-collections-overlay-inner h2 {font-family: "Roboto",Sans-serif;font-weight: 600;}
 .elementor-widget-eael-woo-collections .eael-woo-collections-overlay-inner span {font-family: "Roboto",Sans-serif;font-weight: 600;}
 .elementor-widget-eael-woo-collections .eael-protected-content-message, .elementor-widget-eael-woo-collections .protected-content-error-msg {font-family: "Roboto Slab",Sans-serif;font-weight: 400;}

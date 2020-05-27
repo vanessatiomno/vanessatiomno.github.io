@@ -323,15 +323,18 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {word
 .elementor-field-textual.elementor-size-md {font-size: 16px;min-height: 47px;padding: 6px 16px;-webkit-border-radius: 4px;border-radius: 4px;}
 .elementor-field-textual.elementor-size-lg {font-size: 18px;min-height: 59px;padding: 7px 20px;-webkit-border-radius: 5px;border-radius: 5px;}
 .elementor-field-textual.elementor-size-xl {font-size: 20px;min-height: 72px;padding: 8px 24px;-webkit-border-radius: 6px;border-radius: 6px;}
+.elementor-button-align-center .elementor-field-type-submit button, .elementor-button-align-end .elementor-field-type-submit button, .elementor-button-align-start .elementor-field-type-submit button {-webkit-flex-basis: initial;-ms-flex-preferred-size: initial;flex-basis: auto;}
 .elementor-button-align-center .elementor-field-type-submit {-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
 .elementor-button-align-stretch .elementor-field-type-submit button {-webkit-flex-basis: 100%;-ms-flex-preferred-size: 100%;flex-basis: 100%;}
 .elementor-button-align-start .elementor-field-type-submit {-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;}
 .elementor-button-align-end .elementor-field-type-submit {-webkit-box-pack: end;-webkit-justify-content: flex-end;-ms-flex-pack: end;justify-content: flex-end;}
-@media screen and (max-width:1024px) {.elementor-tablet-button-align-center .elementor-field-type-submit {-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+@media screen and (max-width:1024px) {.elementor-tablet-button-align-center .elementor-field-type-submit button, .elementor-tablet-button-align-end .elementor-field-type-submit button, .elementor-tablet-button-align-start .elementor-field-type-submit button {-webkit-flex-basis: initial;-ms-flex-preferred-size: initial;flex-basis: auto;}
+	.elementor-tablet-button-align-center .elementor-field-type-submit {-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
 	.elementor-tablet-button-align-stretch .elementor-field-type-submit button {-webkit-flex-basis: 100%;-ms-flex-preferred-size: 100%;flex-basis: 100%;}
 	.elementor-tablet-button-align-start .elementor-field-type-submit {-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;}
 	.elementor-tablet-button-align-end .elementor-field-type-submit {-webkit-box-pack: end;-webkit-justify-content: flex-end;-ms-flex-pack: end;justify-content: flex-end;}}
-@media screen and (max-width:767px) {.elementor-mobile-button-align-center .elementor-field-type-submit {-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+@media screen and (max-width:767px) {.elementor-mobile-button-align-center .elementor-field-type-submit button, .elementor-mobile-button-align-end .elementor-field-type-submit button, .elementor-mobile-button-align-start .elementor-field-type-submit button {-webkit-flex-basis: initial;-ms-flex-preferred-size: initial;flex-basis: auto;}
+	.elementor-mobile-button-align-center .elementor-field-type-submit {-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
 	.elementor-mobile-button-align-stretch .elementor-field-type-submit button {-webkit-flex-basis: 100%;-ms-flex-preferred-size: 100%;flex-basis: 100%;}
 	.elementor-mobile-button-align-start .elementor-field-type-submit {-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;}
 	.elementor-mobile-button-align-end .elementor-field-type-submit {-webkit-box-pack: end;-webkit-justify-content: flex-end;-ms-flex-pack: end;justify-content: flex-end;}}
