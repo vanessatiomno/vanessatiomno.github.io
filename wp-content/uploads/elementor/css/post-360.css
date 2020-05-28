@@ -93,6 +93,11 @@
 .elementor-360 .elementor-element.elementor-element-0bfddb9 .eael-tooltip .eael-tooltip-text.eael-tooltip-right:after {border-right-color: #ffff19;}
 .elementor-360 .elementor-element.elementor-element-0bfddb9 > .elementor-widget-container {margin: 10% 0% 0% 0%;padding: 0% 0% 0% 0%;}
 .elementor-360 .elementor-element.elementor-element-50062cc7 {padding: 0px 0px 0px 0px;}
+.elementor-360 .elementor-element.elementor-element-523e15ff .elementor-menu-toggle {margin: 0 auto;background-color: #fff;}
+.elementor-360 .elementor-element.elementor-element-523e15ff .elementor-nav-menu--dropdown a, .elementor-360 .elementor-element.elementor-element-523e15ff .elementor-menu-toggle {color: #0103a1;}
+.elementor-360 .elementor-element.elementor-element-523e15ff .elementor-nav-menu--dropdown .elementor-item, .elementor-360 .elementor-element.elementor-element-523e15ff .elementor-nav-menu--dropdown  .elementor-sub-item {font-family: "GT Pressura",Sans-serif;}
+.elementor-360 .elementor-element.elementor-element-523e15ff div.elementor-menu-toggle {color: #0103a1;}
+.elementor-360 .elementor-element.elementor-element-45d2c0cb {padding: 0px 0px 0px 0px;}
 .elementor-360 .elementor-element.elementor-element-87c58e6 {text-align: center;}
 .elementor-360 .elementor-element.elementor-element-87c58e6 .elementor-image img {width: 100%;max-width: 100%;}
 .elementor-360 .elementor-element.elementor-element-09d5969 .elementor-text-editor {text-align: left;}
@@ -157,7 +162,7 @@
 .elementor-360 .elementor-element.elementor-element-8f182fa .swiper-container-horizontal .swiper-pagination-progressbar {height: 10px;}
 .elementor-360 .elementor-element.elementor-element-8f182fa .swiper-pagination-fraction {font-size: 10px;}
 .elementor-360 .elementor-element.elementor-element-8f182fa .swiper-pagination-bullet-active {background-color: #0103a1;}
-.elementor-360 .elementor-element.elementor-element-7930bff:not(.elementor-motion-effects-element-type-background), .elementor-360 .elementor-element.elementor-element-7930bff > .elementor-motion-effects-container > .elementor-motion-effects-layer {background-color: #fff;background-image: url("http://brandgym.com.br/wp-content/uploads/2020/05/pois.png");background-repeat: repeat-x;background-size: contain;}
+.elementor-360 .elementor-element.elementor-element-7930bff:not(.elementor-motion-effects-element-type-background), .elementor-360 .elementor-element.elementor-element-7930bff > .elementor-motion-effects-container > .elementor-motion-effects-layer {background-color: #fff;background-image: url("http://brandgym.com.br/wp-content/uploads/2020/05/poa2.png");background-repeat: repeat-x;background-size: contain;}
 .elementor-360 .elementor-element.elementor-element-7930bff {transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;padding: 5% 35% 5% 34%;}
 .elementor-360 .elementor-element.elementor-element-7930bff > .elementor-background-overlay {transition: background .3s,border-radius .3s,opacity .3s;}
 .elementor-360 .elementor-element.elementor-element-2b1b2562 > .elementor-element-populated {margin: 5% 0% 5% 0%;padding: 4% 17% 2% 17%;}
@@ -203,6 +208,8 @@ body.elementor-page-360:not(.elementor-motion-effects-element-type-background), 
 	.elementor-360 .elementor-element.elementor-element-18d131a0 .elementor-image img {width: 97%;max-width: 50%;}
 	.elementor-360 .elementor-element.elementor-element-54ac5f3 > .elementor-element-populated {padding: 4% 4% 4% 4%;}
 	.elementor-360 .elementor-element.elementor-element-2030fb03 > .elementor-element-populated {padding: 4% 4% 4% 4%;}
+	.elementor-360 .elementor-element.elementor-element-523e15ff .elementor-nav-menu--dropdown .elementor-item, .elementor-360 .elementor-element.elementor-element-523e15ff .elementor-nav-menu--dropdown  .elementor-sub-item {font-size: 22px;}
+	.elementor-360 .elementor-element.elementor-element-45d2c0cb {margin-top: -5%;margin-bottom: 0%;padding: 0px 0px 0px 0px;}
 	.elementor-360 .elementor-element.elementor-element-09d5969 .elementor-text-editor {text-align: center;}
 	.elementor-360 .elementor-element.elementor-element-5b2b92a .elementor-text-editor {text-align: center;}
 	.elementor-360 .elementor-element.elementor-element-7769cbc .elementor-text-editor {text-align: center;}
